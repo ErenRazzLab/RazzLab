@@ -1,4 +1,6 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-header, footer { background: #222; color: #fff; padding: 10px; text-align: center; }
-nav a { margin: 0 10px; color: #fff; text-decoration: none; }
-main { padding: 20px; }
+body { font-family: Arial, sans-serif; padding: 20px; }
+header, footer { background: #20232a; color: white; padding: 10px; text-align: center; }
+nav a { color: white; margin: 0 15px; text-decoration: none; }
+form { max-width: 400px; margin: auto; }
+input { margin: 5px 0; padding: 8px; width: 100%; }
+button { padding: 10px 15px; background: #61dafb; border: none; cursor: pointer; }
