@@ -1,11 +1,11 @@
-# Razzify
+# Razzlab
 
-Welcome to **Razzify**, a peer‑to‑peer platform for “razzing” (raffling) collectible cards including NBA, NFL, Soccer and Pokémon cards.  This repository contains a ready‑to‑deploy Firebase web application written using plain HTML, Tailwind CSS and vanilla JavaScript.  It showcases a fun, energetic design inspired by the Razzify brand and implements core functionality such as user authentication, listing and joining razzes, creating new razzes (for approved sellers), user profiles and fair draw execution using cryptographic randomness.
+Welcome to **Razzlab**, a peer‑to‑peer platform for “razzing” (raffling) collectible cards including NBA, NFL, Soccer and Pokémon cards.  This repository contains a ready‑to‑deploy Firebase web application written using plain HTML, Tailwind CSS and vanilla JavaScript.  It showcases a fun, energetic design inspired by the Razzlab brand and implements core functionality such as user authentication, listing and joining razzes, creating new razzes (for approved sellers), user profiles and fair draw execution using cryptographic randomness.
 
 ## Project structure
 
 ```
-razzify/
+razzlab/
 ├── firebase.json         # Firebase hosting configuration
 ├── firestore.rules       # Sample Firestore security rules
 ├── .firebaserc           # Placeholder Firebase project mapping
@@ -62,4 +62,4 @@ razzify/
 * The draw execution is configured to use [random.org](https://api.random.org) by default.  By adding your random.org API key to `public/scripts/util.js`, the application will request truly random integers from random.org’s JSON‑RPC service for draw execution.  If the request fails or no key is supplied, it gracefully falls back to the browser’s `crypto.getRandomValues()` API.
 * The user interface uses Tailwind CSS via its CDN build (`https://cdn.tailwindcss.com`).  Feel free to customize the styling and components to match your brand.
 
-Enjoy building with Razzify!  💜
+Enjoy building with Razzlab!  💜
