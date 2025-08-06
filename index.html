@@ -1,136 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Razzify · Live Card Razzes</title>
-    <!-- Tailwind CSS via CDN for quick styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Firebase compat SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-VWFRMeLhHBVRX6TI2+xXHc4EFw/4JmEFHEUViX0u/Tcy6sdQEcRKxLto9rLkm/rdXS8LKQCtEItUWr2GvCBHOWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body class="min-h-screen flex flex-col bg-gray-50 text-gray-800">
-    <!-- Navigation bar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="index.html" class="flex items-center space-x-2">
-          <span class="text-purple-600 text-2xl font-extrabold">Razzify</span>
-        </a>
-        <div id="nav-links" class="flex items-center space-x-4">
-          <!-- Provide default navigation links in case JS fails. These links will be replaced
-               by auth.js based on the user's authentication state. -->
-          <a href="listings.html" class="text-gray-700 hover:underline">Razzes</a>
-          <a href="login.html" class="text-gray-700 hover:underline">Login</a>
-          <a href="register.html" class="text-gray-700 hover:underline">Register</a>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Razzlab - Raffle Marketplace</title>
+  <meta name="description" content="Razzlab - Peer-to-peer marketplace for raffling collectible cards.">
+  <meta property="og:title" content="Razzlab">
+  <meta property="og:site_name" content="Razzlab">
+  <link rel="canonical" href="https://razzlab.com">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Razzlab</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
     </nav>
-
-    <!-- Hero section -->
-    <header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16 md:py-24">
-      <div class="max-w-5xl mx-auto text-center px-4">
-        <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Join the Razz Revolution</h1>
-        <p class="text-lg md:text-2xl mb-6">Razz your way into high‑end card collections and win big!</p>
-        <a href="listings.html" class="inline-block bg-white text-purple-700 px-6 py-3 rounded-full font-semibold shadow hover:bg-purple-50 transition">Enter Live Razzes</a>
-      </div>
-    </header>
-
-    <!-- Home login section -->
-    <section id="home-login-section" class="py-12 bg-gray-50">
-      <div class="max-w-md mx-auto bg-white rounded-lg shadow p-6">
-        <h2 class="text-2xl font-bold mb-4">Log In</h2>
-        <form id="home-login-form" class="space-y-4">
-          <div>
-            <label for="home-email" class="block text-sm font-medium mb-1">Email</label>
-            <input id="home-email" type="email" required class="w-full px-3 py-2 border rounded" />
-          </div>
-          <div>
-            <label for="home-password" class="block text-sm font-medium mb-1">Password</label>
-            <input id="home-password" type="password" required class="w-full px-3 py-2 border rounded" />
-          </div>
-          <div id="home-login-error" class="hidden text-red-600 text-sm"></div>
-          <button type="submit" class="w-full bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Login</button>
-        </form>
-        <button id="home-google-login" class="mt-4 w-full bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Continue with Google</button>
-        <button id="home-facebook-login" class="mt-2 w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Continue with Facebook</button>
-        <p class="mt-4 text-center text-sm">Don't have an account? <a href="register.html" class="text-purple-600 hover:underline">Register</a></p>
-      </div>
-    </section>
-
-    <!-- Current razzes preview -->
-    <section class="py-12">
-      <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-2xl font-bold mb-4">🔥 Live Razzes</h2>
-        <div id="live-razzes" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <!-- Filled dynamically via JS -->
-        </div>
-        <div class="mt-6 text-center">
-          <a href="listings.html" class="text-purple-600 hover:underline">View all razzes →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Highlights section -->
-    <section class="bg-white py-12">
-      <div class="max-w-7xl mx-auto px-4 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="p-6 rounded-lg shadow hover:shadow-md transition bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
-          <h3 class="text-xl font-bold mb-2">Mini & Micro Razzes</h3>
-          <p>Enter low‑cost minis to win entry into high‑end razzes. More chances, more fun!</p>
-        </div>
-        <div class="p-6 rounded-lg shadow hover:shadow-md transition bg-gradient-to-r from-purple-500 to-pink-500 text-white">
-          <h3 class="text-xl font-bold mb-2">Cryptographically Fair Draws</h3>
-          <p>We use browser crypto APIs to ensure truly random and verifiable outcomes.</p>
-        </div>
-        <div class="p-6 rounded-lg shadow hover:shadow-md transition bg-gradient-to-r from-pink-500 to-red-500 text-white">
-          <h3 class="text-xl font-bold mb-2">Showcase Your Collection</h3>
-          <p>Build your personal collection, tag cards as PC, FS or NFT and show off to the community.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recent winners -->
-    <section class="py-12 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-2xl font-bold mb-4">🎉 Recent Winners</h2>
-        <div id="recent-winners" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <!-- Filled dynamically via JS -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-white border-t mt-auto">
-      <div class="max-w-7xl mx-auto px-4 py-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-        <div>
-          <h3 class="font-semibold mb-2">Razzify</h3>
-          <p>Your home for high‑energy card razzes. Built by collectors, for collectors.</p>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-2">Legal</h3>
-          <ul class="space-y-1">
-            <li><a href="terms.html" class="hover:underline">Terms of Service</a></li>
-            <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
-            <li><a href="fee-policy.html" class="hover:underline">Fee Policy</a></li>
-            <li><a href="seller-agreement.html" class="hover:underline">Seller Agreement</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-2">Community</h3>
-          <p>Join our Discord to chat with other razzers and stay up to date!</p>
-        </div>
-      </div>
-      <div class="text-center py-4 text-xs text-gray-500">© <span id="year"></span> Razzify. All rights reserved.</div>
-    </footer>
-
-    <!-- App scripts -->
-    <script type="module" src="scripts/firebaseConfig.js"></script>
-    <script type="module" src="scripts/auth.js"></script>
-    <script type="module" src="scripts/index.js"></script>
-  </body>
+  </header>
+  <main>
+    <p>This is the updated version of Razzlab, formerly Razzify.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Razzlab. All rights reserved.</p>
+  </footer>
+</body>
 </html>
