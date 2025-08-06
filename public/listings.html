@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Razzes · Razzify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+  </head>
+  <body class="min-h-screen flex flex-col bg-gray-50">
+    <!-- Navigation bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center space-x-2">
+          <span class="text-purple-600 text-2xl font-extrabold">Razzify</span>
+        </a>
+        <div id="nav-links" class="flex items-center space-x-4">
+          <!-- Provide default navigation links in case JS fails. These links will be replaced
+               by auth.js based on the user's authentication state. -->
+          <a href="listings.html" class="text-gray-700 hover:underline">Razzes</a>
+          <a href="login.html" class="text-gray-700 hover:underline">Login</a>
+          <a href="register.html" class="text-gray-700 hover:underline">Register</a>
+        </div>
+      </div>
+    </nav>
+    <main class="flex-1 px-4 py-6 max-w-7xl mx-auto">
+      <h1 class="text-3xl font-bold mb-4">Live Razzes</h1>
+      <!-- Filters and sorting -->
+      <div class="flex flex-col sm:flex-row sm:items-end sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
+        <div>
+          <label for="category" class="block text-sm font-medium mb-1">Category</label>
+          <select id="category-filter" class="w-full sm:w-40 px-3 py-2 border rounded">
+            <option value="all">All</option>
+            <option value="basketball">Basketball</option>
+            <option value="soccer">Soccer</option>
+            <option value="pokemon">Pokémon</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="sort" class="block text-sm font-medium mb-1">Sort by</label>
+          <select id="sort-by" class="w-full sm:w-40 px-3 py-2 border rounded">
+            <option value="ending">Ending Soon</option>
+            <option value="spots">Most Spots Filled</option>
+            <option value="newest">Newest</option>
+          </select>
+        </div>
+      </div>
+      <!-- Razzes grid -->
+      <div id="razz-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <!-- Populated by listings.js -->
+      </div>
+      <div id="empty-message" class="text-center text-gray-500 mt-8 hidden">No razzes found. Try adjusting your filters.</div>
+    </main>
+    <!-- Footer links reused from index -->
+    <footer class="bg-white border-t mt-auto">
+      <div class="max-w-7xl mx-auto px-4 py-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+        <div>
+          <h3 class="font-semibold mb-2">Razzify</h3>
+          <p>Your home for high‑energy card razzes. Built by collectors, for collectors.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Legal</h3>
+          <ul class="space-y-1">
+            <li><a href="terms.html" class="hover:underline">Terms of Service</a></li>
+            <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="fee-policy.html" class="hover:underline">Fee Policy</a></li>
+            <li><a href="seller-agreement.html" class="hover:underline">Seller Agreement</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Community</h3>
+          <p>Join our Discord to chat with other razzers and stay up to date!</p>
+        </div>
+      </div>
+      <div class="text-center py-4 text-xs text-gray-500">© <span id="year"></span> Razzify. All rights reserved.</div>
+    </footer>
+    <script type="module" src="scripts/firebaseConfig.js"></script>
+    <script type="module" src="scripts/auth.js"></script>
+    <script type="module" src="scripts/listings.js"></script>
+  </body>
+</html>

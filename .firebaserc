@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "default": "razzify",
+    "razzify": "collectors-club-346bd",
+    "firebase logout": "collectors-club-346bd",
+    "Razzify-prod": "razzify"
+  },
+  "targets": {},
+  "etags": {}
+}
