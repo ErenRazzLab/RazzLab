@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - RazzLab</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <h2>Your Dashboard</h2>
+  <form id="raffleForm">
+    <input type="text" placeholder="Title" id="title" required />
+    <input type="text" placeholder="Description" id="description" required />
+    <input type="number" placeholder="Spots" id="spots" required />
+    <input type="number" placeholder="Price per Spot" id="price" required />
+    <button type="submit">Create Raffle</button>
+  </form>
+  <div id="rafflesList"></div>
+
+  <script type="module" src="scripts/firebase-config.js"></script>
+  <script type="module" src="scripts/dashboard.js"></script>
+</body>
+</html>
