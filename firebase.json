@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 <!-- Placeholder content for firebase.json -->
+=======
+{"hosting": {"public": ".", "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]}}
+>>>>>>> d885342 (Initial Firebase launch version)

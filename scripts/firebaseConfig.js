@@ -1,7 +1,11 @@
 // firebaseConfig.js
 // Replace the values below with your Firebase project's configuration
 // You can find these in your Firebase console under Project settings → General → Web app
+<<<<<<< HEAD
 // The configuration for your Razzify Firebase project.
+=======
+// The configuration for your Razzlab Firebase project.
+>>>>>>> d885342 (Initial Firebase launch version)
 // These values come from the Firebase console (Project settings → General).
 const firebaseConfig = {
   apiKey: "AIzaSyAayohp64v8A7TKxwWSt18lY9OccKU9Ynk",

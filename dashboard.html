@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -19,4 +20,40 @@
   <script type="module" src="scripts/firebase-config.js"></script>
   <script type="module" src="scripts/dashboard.js"></script>
 </body>
+=======
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="RazzLab — Fair Razzes. Real Collectibles." name="description"/>
+<link href="/favicon.ico" rel="icon"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="RazzLab — Fair Razzes. Real Collectibles." name="description"/>
+<link href="/favicon.ico" rel="icon"/>
+<meta charset="utf-8"/>
+<title>Dashboard - RazzLab</title>
+<link href="styles/main.css" rel="stylesheet"/>
+</head>
+<body>
+<h2>Your Dashboard</h2>
+<form id="raffleForm">
+<input id="title" placeholder="Title" required="" type="text"/>
+<input id="description" placeholder="Description" required="" type="text"/>
+<input id="spots" placeholder="Spots" required="" type="number"/>
+<input id="price" placeholder="Price per Spot" required="" type="number"/>
+<button type="submit">Create Raffle</button>
+</form>
+<div id="rafflesList"></div>
+<script src="scripts/dashboard.js" type="module"></script>
+<!-- Firebase SDKs -->
+<!-- Your Firebase config -->
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"></script>
+<script src="/scripts/firebase-init.js"></script>
+<script src="/scripts/auth-guard.js" type="module"></script><script src="/scripts/logout.js" type="module"></script><script src="/scripts/user-info.js" type="module"></script></body>
+>>>>>>> d885342 (Initial Firebase launch version)
 </html>
