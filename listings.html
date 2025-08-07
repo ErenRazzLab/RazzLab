@@ -1,5 +1,101 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
 <head><title>Listings - Razzlab</title></head>
 <body><h1>Current Listings</h1><p>Explore available razzes.</p></body>
+=======
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="RazzLab — Fair Razzes. Real Collectibles." name="description"/>
+<link href="/favicon.ico" rel="icon"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="RazzLab — Fair Razzes. Real Collectibles." name="description"/>
+<link href="/favicon.ico" rel="icon"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Live Razzes · Razzlab</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-50">
+<!-- Navigation bar -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+<a class="flex items-center space-x-2" href="index.html">
+<span class="text-purple-600 text-2xl font-extrabold">Razzlab</span>
+</a>
+<div class="flex items-center space-x-4" id="nav-links">
+<!-- Provide default navigation links in case JS fails. These links will be replaced
+               by auth.js based on the user's authentication state. -->
+<a class="text-gray-700 hover:underline" href="listings.html">Razzes</a>
+<a class="text-gray-700 hover:underline" href="login.html">Login</a>
+<a class="text-gray-700 hover:underline" href="register.html">Register</a>
+</div>
+</div>
+</nav>
+<main class="flex-1 px-4 py-6 max-w-7xl mx-auto">
+<h1 class="text-3xl font-bold mb-4">Live Razzes</h1>
+<!-- Filters and sorting -->
+<div class="flex flex-col sm:flex-row sm:items-end sm:space-x-4 space-y-4 sm:space-y-0 mb-6">
+<div>
+<label class="block text-sm font-medium mb-1" for="category">Category</label>
+<select class="w-full sm:w-40 px-3 py-2 border rounded" id="category-filter">
+<option value="all">All</option>
+<option value="basketball">Basketball</option>
+<option value="soccer">Soccer</option>
+<option value="pokemon">Pokémon</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium mb-1" for="sort">Sort by</label>
+<select class="w-full sm:w-40 px-3 py-2 border rounded" id="sort-by">
+<option value="ending">Ending Soon</option>
+<option value="spots">Most Spots Filled</option>
+<option value="newest">Newest</option>
+</select>
+</div>
+</div>
+<!-- Razzes grid -->
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="razz-grid">
+<!-- Populated by listings.js -->
+</div>
+<div class="text-center text-gray-500 mt-8 hidden" id="empty-message">No razzes found. Try adjusting your filters.</div>
+</main>
+<!-- Footer links reused from index -->
+<footer class="bg-white border-t mt-auto">
+<div class="max-w-7xl mx-auto px-4 py-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+<div>
+<h3 class="font-semibold mb-2">Razzlab</h3>
+<p>Your home for high‑energy card razzes. Built by collectors, for collectors.</p>
+</div>
+<div>
+<h3 class="font-semibold mb-2">Legal</h3>
+<ul class="space-y-1">
+<li><a class="hover:underline" href="terms.html">Terms of Service</a></li>
+<li><a class="hover:underline" href="privacy.html">Privacy Policy</a></li>
+<li><a class="hover:underline" href="fee-policy.html">Fee Policy</a></li>
+<li><a class="hover:underline" href="seller-agreement.html">Seller Agreement</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold mb-2">Community</h3>
+<p>Join our Discord to chat with other razzers and stay up to date!</p>
+</div>
+</div>
+<div class="text-center py-4 text-xs text-gray-500">© <span id="year"></span> Razzlab. All rights reserved.</div>
+</footer>
+<script src="scripts/listings.js" type="module"></script>
+<!-- Firebase SDKs -->
+<!-- Your Firebase config -->
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"></script>
+<script src="/scripts/firebase-init.js"></script>
+<script src="/scripts/load-razzes.js" type="module"></script><script src="/scripts/dynamic-nav.js" type="module"></script></body>
+>>>>>>> d885342 (Initial Firebase launch version)
 </html>

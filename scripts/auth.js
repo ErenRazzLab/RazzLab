@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // auth.js
 import { firebase, auth, db } from './firebaseConfig.js';
 
@@ -170,3 +171,38 @@ export async function populateNav() {
 
 // Automatically populate nav on auth state change
 onAuthStateChangedCustom(() => populateNav());
+=======
+// scripts/auth.js
+
+// Register form
+const registerForm = document.getElementById("register-form");
+if (registerForm) {
+  registerForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = registerForm.email.value;
+    const password = registerForm.password.value;
+
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then(() => {
+        window.location.href = "/dashboard.html";
+      })
+      .catch((err) => alert(err.message));
+  });
+}
+
+// Login form
+const loginForm = document.getElementById("login-form");
+if (loginForm) {
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = loginForm.email.value;
+    const password = loginForm.password.value;
+
+    firebase.auth().signInWithEmailAndPassword(email, password)
+      .then(() => {
+        window.location.href = "/dashboard.html";
+      })
+      .catch((err) => alert(err.message));
+  });
+}
+>>>>>>> d885342 (Initial Firebase launch version)
