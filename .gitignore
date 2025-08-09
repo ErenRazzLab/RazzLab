@@ -1,2 +1,5 @@
 *.zip
 *.zip
+
+# large archives
+Archive*.zip
