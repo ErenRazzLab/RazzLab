@@ -1,0 +1,43 @@
+name: CI — Build and E2E health check
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  e2e-health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install frontend deps
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build frontend
+        working-directory: frontend
+        env:
+          NEXT_PUBLIC_API_BASE: ${{ secrets.NEXT_PUBLIC_API_BASE }}
+        run: npm run build
+
+      - name: Start frontend
+        working-directory: frontend
+        env:
+          PORT: 3000
+          NEXT_PUBLIC_API_BASE: ${{ secrets.NEXT_PUBLIC_API_BASE }}
+        run: |
+          (npm run start &) ; sleep 2
+
+      - name: Wait for port 3000
+        run: |
+          bash agent/wait_for_port.sh 3000 120
+
+      - name: Check /health page
+        run: |
+          bash agent/check_frontend_health.sh
