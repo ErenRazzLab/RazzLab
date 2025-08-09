@@ -1,5 +1,28 @@
-<<<<<<< HEAD
-<!-- Placeholder content for firebase.json -->
-=======
-{"hosting": {"public": ".", "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]}}
->>>>>>> d885342 (Initial Firebase launch version)
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/old-page",
+        "destination": "/new-page",
+        "type": 301
+      }
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "errorPages": {
+      "404": "/404.html"
+    }
+  }
+}

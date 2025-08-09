@@ -1,0 +1,1814 @@
+{
+  "totalFinds": 226,
+  "totalFixed": 226,
+  "items": [
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 9,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 11,
+      "column": 51,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"</script><title>Create a Razz - Razzlab</title></head>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 17,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 19,
+      "column": 40,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>Create Razz · Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 25,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 27,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<span class=\\\"text-purple-600 text-2xl font-extrabold\\\">Razzlab</span>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 33,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 35,
+      "column": 52,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<h3 class=\\\"font-semibold mb-2\\\">Razzlab</h3>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 41,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 43,
+      "column": 51,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"</script><title>Data Deletion - Razzlab</title></head>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 49,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 51,
+      "column": 42,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>Data Deletion · Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 57,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 59,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<span class=\\\"text-purple-600 text-2xl font-extrabold\\\">Razzlab</span>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 65,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 67,
+      "column": 46,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"If you wish to remove your Razzlab account and delete all associated personal data,\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 73,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 75,
+      "column": 57,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"from the address associated with your Razzlab account. In your message, include\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 81,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 83,
+      "column": 52,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<h3 class=\\\"font-semibold mb-2\\\">Razzlab</h3>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 89,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 91,
+      "column": 48,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"</script><title>Fee Policy - Razzlab</title></head>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 97,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 99,
+      "column": 58,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<body><h1>Fee Policy</h1><p>Details of Razzlab's fee structure.</p></body>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 105,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 107,
+      "column": 39,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>Fee Policy · Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 113,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 115,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<span class=\\\"text-purple-600 text-2xl font-extrabold\\\">Razzlab</span>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 121,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 123,
+      "column": 37,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">Razzlab charges modest fees to maintain the platform, support development and ensure fair draws. The fee structure is transparent and applied to sellers at the time of cr"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 129,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 131,
+      "column": 52,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<h3 class=\\\"font-semibold mb-2\\\">Razzlab</h3>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 137,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 139,
+      "column": 46,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"</script><title>Listings - Razzlab</title></head>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 145,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 147,
+      "column": 40,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>Live Razzes · Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 153,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 155,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<span class=\\\"text-purple-600 text-2xl font-extrabold\\\">Razzlab</span>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 161,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 163,
+      "column": 52,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<h3 class=\\\"font-semibold mb-2\\\">Razzlab</h3>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 169,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 171,
+      "column": 101,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<div class=\\\"text-center py-4 text-xs text-gray-500\\\">© <span id=\\\"year\\\"></span> Razzlab. All rights reserved.</div>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 177,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 179,
+      "column": 34,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>Login - Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 185,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 187,
+      "column": 34,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>Login · Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 193,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 195,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<span class=\\\"text-purple-600 text-2xl font-extrabold\\\">Razzlab</span>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 201,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 203,
+      "column": 52,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"</script><title>Privacy Policy - Razzlab</title></head>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 209,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 211,
+      "column": 82,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<body><h1>Privacy Policy</h1><p>This is the privacy policy for Razzlab.</p></body>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 217,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 219,
+      "column": 43,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>Privacy Policy · Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 225,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 227,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<span class=\\\"text-purple-600 text-2xl font-extrabold\\\">Razzlab</span>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 233,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 235,
+      "column": 71,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">This Privacy Policy describes how Razzlab collects, uses, and discloses your personal information when you use our services. By using Razzlab, you consent to the collecti"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 235,
+      "column": 171,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">This Privacy Policy describes how Razzlab collects, uses, and discloses your personal information when you use our services. By using Razzlab, you consent to the collecti"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 241,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 243,
+      "column": 71,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">This Privacy Policy describes how Razzlab collects, uses, and discloses your personal information when you use our services. By using Razzlab, you consent to the collecti"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 243,
+      "column": 171,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">This Privacy Policy describes how Razzlab collects, uses, and discloses your personal information when you use our services. By using Razzlab, you consent to the collecti"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 249,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 251,
+      "column": 52,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<h3 class=\\\"font-semibold mb-2\\\">Razzlab</h3>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 257,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 259,
+      "column": 45,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"</script><title>Profile - Razzlab</title></head>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 265,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 267,
+      "column": 39,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>My Profile · Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 273,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 275,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<span class=\\\"text-purple-600 text-2xl font-extrabold\\\">Razzlab</span>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 281,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 283,
+      "column": 52,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<h3 class=\\\"font-semibold mb-2\\\">Razzlab</h3>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 286,
+      "column": 52,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"file\": \"/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/.github/workflows/casing_audit.yml\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 289,
+      "column": 22,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 291,
+      "column": 24,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"node razzlab_casing_tool/scripts/audit_casing.js --root .\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 294,
+      "column": 52,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"file\": \"/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/README.md\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 297,
+      "column": 22,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 299,
+      "column": 32,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"1. Copy the `razzlab_casing_tool/` folder into your repo.\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 302,
+      "column": 52,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"file\": \"/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/README.md\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 305,
+      "column": 22,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 307,
+      "column": 24,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"node razzlab_casing_tool/scripts/audit_casing.js --root .\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 310,
+      "column": 52,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"file\": \"/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/README.md\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 313,
+      "column": 22,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 315,
+      "column": 24,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"node razzlab_casing_tool/scripts/audit_casing.js --root . --fix\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 318,
+      "column": 52,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"file\": \"/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/README.md\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 321,
+      "column": 22,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 323,
+      "column": 70,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"> ⚠️ The fixer will replace any case-insensitive \\\"razzlab\\\" with **RazzLab**, except when it looks like a domain/email (e.g., `razzlab.com`, `hello@razzlab.com`). Always commit first or r"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 326,
+      "column": 52,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"file\": \"/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/scripts/audit_casing.js\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 329,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 331,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"* Scans files for incorrect \\\"RazzLab\\\" casing (e.g., \\\"Razzlab\\\", \\\"razzlab\\\") and optionally fixes them.\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 331,
+      "column": 88,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"* Scans files for incorrect \\\"RazzLab\\\" casing (e.g., \\\"Razzlab\\\", \\\"razzlab\\\") and optionally fixes them.\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 334,
+      "column": 52,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"file\": \"/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/scripts/audit_casing.js\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 337,
+      "column": 22,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 339,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"* Scans files for incorrect \\\"RazzLab\\\" casing (e.g., \\\"Razzlab\\\", \\\"razzlab\\\") and optionally fixes them.\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 339,
+      "column": 88,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"* Scans files for incorrect \\\"RazzLab\\\" casing (e.g., \\\"Razzlab\\\", \\\"razzlab\\\") and optionally fixes them.\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 342,
+      "column": 52,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"file\": \"/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/scripts/audit_casing.js\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 345,
+      "column": 22,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 347,
+      "column": 41,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"// case-insensitive \\\"razzlab\\\" finder\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 350,
+      "column": 52,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"file\": \"/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/scripts/audit_casing.js\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 353,
+      "column": 22,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 355,
+      "column": 34,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"const regex = /razzlab/gi;\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 361,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 363,
+      "column": 37,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>Register - Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 369,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 371,
+      "column": 37,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>Register · Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 377,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 379,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<span class=\\\"text-purple-600 text-2xl font-extrabold\\\">Razzlab</span>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 385,
+      "column": 22,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 387,
+      "column": 33,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"authDomain: \\\"razzlab.firebaseapp.com\\\",\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 393,
+      "column": 22,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 395,
+      "column": 32,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"projectId: \\\"razzlab\\\",\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 401,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 403,
+      "column": 49,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"// The configuration for your Razzlab Firebase project.\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 409,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 411,
+      "column": 54,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"</script><title>Seller Agreement - Razzlab</title></head>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 417,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 419,
+      "column": 70,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<body><h1>Seller Agreement</h1><p>Seller terms for Razzlab.</p></body>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 425,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 427,
+      "column": 45,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>Seller Agreement · Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 433,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 435,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<span class=\\\"text-purple-600 text-2xl font-extrabold\\\">Razzlab</span>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 441,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 443,
+      "column": 123,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">This Seller Agreement outlines the responsibilities and obligations of sellers on the Razzlab platform. By creating a razz, you acknowledge and agree to these terms.</p>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 449,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 451,
+      "column": 159,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">Only approved sellers may list razzes. Approval may require identity verification and a history of positive transactions. Razzlab reserves the right to revoke seller priv"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 457,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 459,
+      "column": 99,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">Sellers must comply with all applicable laws and regulations. Razzlab is not responsible for any legal issues arising from the seller’s actions.</p>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 465,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 467,
+      "column": 52,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<h3 class=\\\"font-semibold mb-2\\\">Razzlab</h3>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 473,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 475,
+      "column": 43,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"</script><title>Terms - Razzlab</title></head>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 481,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 483,
+      "column": 73,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<body><h1>Terms and Conditions</h1><p>Terms for using Razzlab.</p></body>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 489,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 491,
+      "column": 45,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<title>Terms of Service · Razzlab</title>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 497,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 499,
+      "column": 75,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<span class=\\\"text-purple-600 text-2xl font-extrabold\\\">Razzlab</span>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 505,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 507,
+      "column": 72,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for colle"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 507,
+      "column": 112,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for colle"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 507,
+      "column": 159,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for colle"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 513,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 515,
+      "column": 72,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for colle"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 515,
+      "column": 112,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for colle"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 515,
+      "column": 159,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for colle"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 521,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 523,
+      "column": 72,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for colle"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 523,
+      "column": 112,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for colle"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 523,
+      "column": 159,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for colle"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 529,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 531,
+      "column": 160,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">All razzes are created by sellers in good faith. Sellers are responsible for delivering the advertised card to the winner. Razzlab provides the platform but does not take"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 537,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 539,
+      "column": 37,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">Razzlab may charge a small fee to cover platform costs. Details are outlined in our <a class=\\\"text-purple-600 underline\\\" href=\\\"fee-policy.html\\\">Fee Policy</a>.</p>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 545,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 547,
+      "column": 37,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<p class=\\\"mb-4\\\">Razzlab is not responsible for the actions of individual sellers or buyers. While we strive to maintain a trustworthy community, all transactions occur directly between m"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 553,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"found_text\": \"Razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/casing_report.json",
+      "line": 555,
+      "column": 52,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "\"context\": \"<h3 class=\\\"font-semibold mb-2\\\">Razzlab</h3>\""
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/create.html",
+      "line": 20,
+      "column": 35,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "</script><title>Create a Razz - Razzlab</title></head>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/create.html",
+      "line": 36,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>Create Razz · Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/create.html",
+      "line": 43,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<span class=\"text-purple-600 text-2xl font-extrabold\">Razzlab</span>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/create.html",
+      "line": 107,
+      "column": 32,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<h3 class=\"font-semibold mb-2\">Razzlab</h3>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/data-deletion.html",
+      "line": 20,
+      "column": 35,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "</script><title>Data Deletion - Razzlab</title></head>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/data-deletion.html",
+      "line": 36,
+      "column": 24,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>Data Deletion · Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/data-deletion.html",
+      "line": 45,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<span class=\"text-purple-600 text-2xl font-extrabold\">Razzlab</span>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/data-deletion.html",
+      "line": 52,
+      "column": 36,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "If you wish to remove your Razzlab account and delete all associated personal data,"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/data-deletion.html",
+      "line": 61,
+      "column": 49,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "from the address associated with your Razzlab account. In your message, include"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/data-deletion.html",
+      "line": 86,
+      "column": 32,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<h3 class=\"font-semibold mb-2\">Razzlab</h3>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/fee-policy.html",
+      "line": 20,
+      "column": 32,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "</script><title>Fee Policy - Razzlab</title></head>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/fee-policy.html",
+      "line": 21,
+      "column": 40,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<body><h1>Fee Policy</h1><p>Details of Razzlab's fee structure.</p></body>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/fee-policy.html",
+      "line": 36,
+      "column": 21,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>Fee Policy · Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/fee-policy.html",
+      "line": 43,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<span class=\"text-purple-600 text-2xl font-extrabold\">Razzlab</span>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/fee-policy.html",
+      "line": 49,
+      "column": 17,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">Razzlab charges modest fees to maintain the platform, support development and ensure fair draws. The fee structure is transparent and applied to sellers at the time of creating a razz."
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/fee-policy.html",
+      "line": 60,
+      "column": 32,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<h3 class=\"font-semibold mb-2\">Razzlab</h3>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/listings.html",
+      "line": 20,
+      "column": 30,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "</script><title>Listings - Razzlab</title></head>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/listings.html",
+      "line": 36,
+      "column": 22,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>Live Razzes · Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/listings.html",
+      "line": 44,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<span class=\"text-purple-600 text-2xl font-extrabold\">Razzlab</span>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/listings.html",
+      "line": 88,
+      "column": 32,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<h3 class=\"font-semibold mb-2\">Razzlab</h3>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/listings.html",
+      "line": 105,
+      "column": 79,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<div class=\"text-center py-4 text-xs text-gray-500\">© <span id=\"year\"></span> Razzlab. All rights reserved.</div>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/login.html",
+      "line": 21,
+      "column": 18,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>Login - Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/login.html",
+      "line": 47,
+      "column": 16,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>Login · Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/login.html",
+      "line": 54,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<span class=\"text-purple-600 text-2xl font-extrabold\">Razzlab</span>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/privacy.html",
+      "line": 20,
+      "column": 36,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "</script><title>Privacy Policy - Razzlab</title></head>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/privacy.html",
+      "line": 21,
+      "column": 64,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<body><h1>Privacy Policy</h1><p>This is the privacy policy for Razzlab.</p></body>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/privacy.html",
+      "line": 36,
+      "column": 25,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>Privacy Policy · Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/privacy.html",
+      "line": 43,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<span class=\"text-purple-600 text-2xl font-extrabold\">Razzlab</span>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/privacy.html",
+      "line": 49,
+      "column": 51,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">This Privacy Policy describes how Razzlab collects, uses, and discloses your personal information when you use our services. By using Razzlab, you consent to the collection and use of "
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/privacy.html",
+      "line": 49,
+      "column": 151,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">This Privacy Policy describes how Razzlab collects, uses, and discloses your personal information when you use our services. By using Razzlab, you consent to the collection and use of "
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/privacy.html",
+      "line": 64,
+      "column": 32,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<h3 class=\"font-semibold mb-2\">Razzlab</h3>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/profile.html",
+      "line": 20,
+      "column": 29,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "</script><title>Profile - Razzlab</title></head>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/profile.html",
+      "line": 36,
+      "column": 21,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>My Profile · Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/profile.html",
+      "line": 43,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<span class=\"text-purple-600 text-2xl font-extrabold\">Razzlab</span>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/profile.html",
+      "line": 83,
+      "column": 32,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<h3 class=\"font-semibold mb-2\">Razzlab</h3>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/.github/workflows/casing_audit.yml",
+      "line": 23,
+      "column": 16,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "node razzlab_casing_tool/scripts/audit_casing.js --root ."
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/README.md",
+      "line": 14,
+      "column": 14,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "1. Copy the `razzlab_casing_tool/` folder into your repo."
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/README.md",
+      "line": 19,
+      "column": 6,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "node razzlab_casing_tool/scripts/audit_casing.js --root ."
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/README.md",
+      "line": 27,
+      "column": 6,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "node razzlab_casing_tool/scripts/audit_casing.js --root . --fix"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/README.md",
+      "line": 30,
+      "column": 51,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "> ⚠️ The fixer will replace any case-insensitive \"razzlab\" with **RazzLab**, except when it looks like a domain/email (e.g., `razzlab.com`, `hello@razzlab.com`). Always commit first or run on a branch"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/scripts/audit_casing.js",
+      "line": 4,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "* Scans files for incorrect \"RazzLab\" casing (e.g., \"Razzlab\", \"razzlab\") and optionally fixes them."
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/scripts/audit_casing.js",
+      "line": 4,
+      "column": 66,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "* Scans files for incorrect \"RazzLab\" casing (e.g., \"Razzlab\", \"razzlab\") and optionally fixes them."
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/scripts/audit_casing.js",
+      "line": 74,
+      "column": 24,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "// case-insensitive \"razzlab\" finder"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/razzlab_casing_tool/scripts/audit_casing.js",
+      "line": 75,
+      "column": 18,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "const regex = /razzlab/gi;"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/register.html",
+      "line": 21,
+      "column": 21,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>Register - Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/register.html",
+      "line": 48,
+      "column": 19,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>Register · Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/register.html",
+      "line": 55,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<span class=\"text-purple-600 text-2xl font-extrabold\">Razzlab</span>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/scripts/firebase-init.js",
+      "line": 6,
+      "column": 16,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "authDomain: \"razzlab.firebaseapp.com\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/scripts/firebase-init.js",
+      "line": 7,
+      "column": 15,
+      "found_text": "razzlab",
+      "suggestion": "RazzLab",
+      "context": "projectId: \"razzlab\","
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/scripts/firebaseConfig.js",
+      "line": 7,
+      "column": 31,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "// The configuration for your Razzlab Firebase project."
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/seller-agreement.html",
+      "line": 20,
+      "column": 38,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "</script><title>Seller Agreement - Razzlab</title></head>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/seller-agreement.html",
+      "line": 21,
+      "column": 52,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<body><h1>Seller Agreement</h1><p>Seller terms for Razzlab.</p></body>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/seller-agreement.html",
+      "line": 36,
+      "column": 27,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>Seller Agreement · Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/seller-agreement.html",
+      "line": 43,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<span class=\"text-purple-600 text-2xl font-extrabold\">Razzlab</span>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/seller-agreement.html",
+      "line": 49,
+      "column": 103,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">This Seller Agreement outlines the responsibilities and obligations of sellers on the Razzlab platform. By creating a razz, you acknowledge and agree to these terms.</p>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/seller-agreement.html",
+      "line": 51,
+      "column": 139,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">Only approved sellers may list razzes. Approval may require identity verification and a history of positive transactions. Razzlab reserves the right to revoke seller privileges at any "
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/seller-agreement.html",
+      "line": 59,
+      "column": 79,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">Sellers must comply with all applicable laws and regulations. Razzlab is not responsible for any legal issues arising from the seller’s actions.</p>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/seller-agreement.html",
+      "line": 64,
+      "column": 32,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<h3 class=\"font-semibold mb-2\">Razzlab</h3>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/terms.html",
+      "line": 20,
+      "column": 27,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "</script><title>Terms - Razzlab</title></head>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/terms.html",
+      "line": 21,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<body><h1>Terms and Conditions</h1><p>Terms for using Razzlab.</p></body>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/terms.html",
+      "line": 32,
+      "column": 27,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<title>Terms of Service · Razzlab</title>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/terms.html",
+      "line": 39,
+      "column": 55,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<span class=\"text-purple-600 text-2xl font-extrabold\">Razzlab</span>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/terms.html",
+      "line": 45,
+      "column": 52,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for collectors to run p"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/terms.html",
+      "line": 45,
+      "column": 92,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for collectors to run p"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/terms.html",
+      "line": 45,
+      "column": 139,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">These terms govern your use of the Razzlab platform. By accessing or using Razzlab, you agree to be bound by these terms. Razzlab is a membership‑based platform for collectors to run p"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/terms.html",
+      "line": 49,
+      "column": 140,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">All razzes are created by sellers in good faith. Sellers are responsible for delivering the advertised card to the winner. Razzlab provides the platform but does not take possession of"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/terms.html",
+      "line": 53,
+      "column": 17,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">Razzlab may charge a small fee to cover platform costs. Details are outlined in our <a class=\"text-purple-600 underline\" href=\"fee-policy.html\">Fee Policy</a>.</p>"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/terms.html",
+      "line": 55,
+      "column": 17,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<p class=\"mb-4\">Razzlab is not responsible for the actions of individual sellers or buyers. While we strive to maintain a trustworthy community, all transactions occur directly between members. In the"
+    },
+    {
+      "file": "/Users/erencihangir/Desktop/RazzLab/terms.html",
+      "line": 62,
+      "column": 32,
+      "found_text": "Razzlab",
+      "suggestion": "RazzLab",
+      "context": "<h3 class=\"font-semibold mb-2\">Razzlab</h3>"
+    }
+  ]
+}
