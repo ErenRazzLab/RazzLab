@@ -1,1 +1,5 @@
-{ "projects": { "default": "razzlab" } }
+{
+  "projects": {
+    "default": "razzlab"
+  }
+}
