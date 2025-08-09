@@ -4,7 +4,7 @@
 <<<<<<< HEAD
 // The configuration for your Razzify Firebase project.
 =======
-// The configuration for your Razzlab Firebase project.
+// The configuration for your RazzLab Firebase project.
 >>>>>>> d885342 (Initial Firebase launch version)
 // These values come from the Firebase console (Project settings → General).
 const firebaseConfig = {

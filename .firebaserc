@@ -1,14 +1,1 @@
-{
-  "projects": {
-<<<<<<< HEAD
-    "default": "razzify",
-    "razzify": "collectors-club-346bd",
-    "firebase logout": "collectors-club-346bd",
-    "Razzify-prod": "razzify"
-=======
-    "RazzLab": "razzlab"
->>>>>>> d885342 (Initial Firebase launch version)
-  },
-  "targets": {},
-  "etags": {}
-}
+{ "projects": { "default": "razzlab" } }
