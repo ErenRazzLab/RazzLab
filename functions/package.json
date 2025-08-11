@@ -1,0 +1,20 @@
+{
+  "name": "razzlab-functions",
+  "private": true,
+  "engines": {
+    "node": "20"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "deploy": "npm run build && firebase deploy --only functions"
+  },
+  "dependencies": {
+    "stripe": "^16.6.0",
+    "firebase-functions": "^5.0.1",
+    "firebase-admin": "^12.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

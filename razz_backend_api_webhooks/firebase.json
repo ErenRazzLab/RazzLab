@@ -1,18 +1,29 @@
 {
+  "functions": {
+    "source": "functions"
+  },
   "hosting": {
-    "public": "public",
+    "public": "frontend/dist",
     "ignore": [
+      "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
     "rewrites": [
       {
-        "source": "/api/**",
-        "run": {
-          "serviceId": "razz-backend",
-          "region": "australia-southeast2"
-        }
+        "source": "/api/stripe/create-payment-intent",
+        "function": "createPaymentIntent"
+      },
+      {
+        "source": "/api/stripe/webhook",
+        "function": "stripeWebhook"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
       }
-    ]
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
   }
 }

@@ -6,23 +6,37 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "headers": [
+      {
+        "source": "**/*.{js,css}",
+        "headers": [
+          { "key": "Cache-Control", "value": "public,max-age=31536000,immutable" }
+        ]
+      },
+      {
+        "source": "**/*.{png,jpg,jpeg,gif,webp,svg}",
+        "headers": [
+          { "key": "Cache-Control", "value": "public,max-age=31536000,immutable" }
+        ]
+      }
+    ],
     "rewrites": [
+      {
+        "source": "/api/stripe/create-payment-intent",
+        "function": "createPaymentIntent"
+      },
+      {
+        "source": "/api/stripe/webhook",
+        "function": "stripeWebhook"
+      },
       {
         "source": "**",
         "destination": "/index.html"
       }
-    ],
-    "redirects": [
-      {
-        "source": "/old-page",
-        "destination": "/new-page",
-        "type": 301
-      }
-    ],
-    "cleanUrls": true,
-    "trailingSlash": false,
-    "errorPages": {
-      "404": "/404.html"
-    }
+    ]
+  },
+  "functions": {
+    "source": "functions",
+    "runtime": "nodejs20"
   }
 }

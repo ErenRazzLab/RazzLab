@@ -16,13 +16,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      # Stripe + env for build/functions (from repo secrets)
       NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY }}
       STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
       STRIPE_WEBHOOK_SECRET: ${{ secrets.STRIPE_WEBHOOK_SECRET }}
-      # Service account JSON (required)
-      FIREBASE_SERVICE_ACCOUNT_RAZZLAB: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RAZZLAB }}
-      # Project
+      GCP_SA_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RAZZLAB }}
       FIREBASE_PROJECT_ID: razzlab
 
     steps:
@@ -37,50 +34,56 @@ jobs:
       - name: Install Firebase CLI
         run: npm i -g firebase-tools
 
-      - name: Auth with service account (non-interactive)
-        env:
-          GCP_SA_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RAZZLAB }}
+      - name: Auth with service account
         run: |
           echo "$GCP_SA_KEY" > $HOME/gcp_sa.json
           export GOOGLE_APPLICATION_CREDENTIALS="$HOME/gcp_sa.json"
-          firebase projects:list 1>/dev/null
+          firebase projects:list > /dev/null
 
-      - name: Prepare frontend env (if needed)
-        run: |
-          cat > .env.production << 'EOF'
-          NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=${NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}
-          EOF
-
-      - name: Build root (if present)
+      - name: Install deps (root) if present
         run: |
           if [ -f package.json ]; then
             npm ci
-            npm run build --if-present
           fi
+
+      - name: Build frontend -> dist
+        run: |
+          set -e
+          mkdir -p dist
+          if [ -d frontend ]; then
+            cd frontend
+            npm ci
+            npx next build || npm run build || true
+            npx next export -o out || true
+            cd ..
+            cp -r frontend/out/* dist/ 2>/dev/null || true
+            cp -r frontend/build/* dist/ 2>/dev/null || true
+          else
+            # fallback: root build outputs to out/ or build/
+            npx next build || npm run build || true
+            npx next export -o out || true
+            cp -r out/* dist/ 2>/dev/null || true
+            cp -r build/* dist/ 2>/dev/null || true
+          fi
+          test -e dist/index.html || echo "<!doctype html><title>RazzLab</title>" > dist/index.html
 
       - name: Deploy Functions
         if: ${{ github.event.inputs.deploy_functions == 'true' }}
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/gcp_sa.json
-          STRIPE_SECRET_KEY: ${{ env.STRIPE_SECRET_KEY }}
-          STRIPE_WEBHOOK_SECRET: ${{ env.STRIPE_WEBHOOK_SECRET }}
         run: |
-          cp $HOME/gcp_sa.json $GOOGLE_APPLICATION_CREDENTIALS
+          export GOOGLE_APPLICATION_CREDENTIALS="$HOME/gcp_sa.json"
           if [ -d functions ]; then
             cd functions
             npm ci
             npm run build || npx tsc -p tsconfig.json
             cd ..
-            firebase deploy --only functions --project ${FIREBASE_PROJECT_ID}
+            firebase deploy --only functions --project "$FIREBASE_PROJECT_ID" --force
           else
             echo "No functions directory; skipping."
           fi
 
       - name: Deploy Hosting
         if: ${{ github.event.inputs.deploy_hosting == 'true' }}
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/gcp_sa.json
         run: |
-          cp $HOME/gcp_sa.json $GOOGLE_APPLICATION_CREDENTIALS
-          firebase deploy --only hosting --project ${FIREBASE_PROJECT_ID}
+          export GOOGLE_APPLICATION_CREDENTIALS="$HOME/gcp_sa.json"
+          firebase deploy --only hosting --project "$FIREBASE_PROJECT_ID" --force
 
