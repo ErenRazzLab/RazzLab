@@ -1,16 +1,23 @@
+# deps
 node_modules/
 frontend/node_modules/
 functions/node_modules/
+
+# builds / artifacts
 dist/
 frontend/out/
 .next/
 functions/lib/
-.env
-.env.*
-frontend/.env
-functions/.env
 firebase-debug.log
 .DS_Store
-env.production
+
+# env / secrets
 .env
 .env.*
+env.production
+frontend/.env
+functions/.env
+
+# archives
+*.zip
+
