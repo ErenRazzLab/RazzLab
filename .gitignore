@@ -13,4 +13,4 @@ env.production
 frontend/.env
 functions/.env
 *.zip
-razzlab-3c70c40cfb23.json
+razzlab-*.json
