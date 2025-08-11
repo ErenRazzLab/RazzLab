@@ -2,41 +2,53 @@ name: Deploy Firebase
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+    env:
+      FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20 (cache npm)
+        uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            frontend/package-lock.json
+            functions/package-lock.json
 
       - name: Install Firebase CLI
-        run: npm install -g firebase-tools
+        run: npm i -g firebase-tools
 
-      - name: Authenticate with Firebase
-        run: |
-          echo "$GCP_SA_KEY" > $HOME/gcp_sa.json
-          echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcp_sa.json" >> $GITHUB_ENV
-          firebase projects:list 1>/dev/null
+      - name: Fail fast if secrets missing
         env:
-          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+          GCP_SA_KEY_B64: ${{ secrets.GCP_SA_KEY_B64 }}
+        run: |
+          [ -n "$GCP_SA_KEY_B64" ] || { echo "::error::Missing secret GCP_SA_KEY_B64"; exit 1; }
+          [ -n "$FIREBASE_PROJECT_ID" ] || { echo "::error::Missing secret FIREBASE_PROJECT_ID"; exit 1; }
 
-      - name: Build frontend and prepare dist
+      - name: Authenticate with Firebase (base64 key)
+        env:
+          GCP_SA_KEY_B64: ${{ secrets.GCP_SA_KEY_B64 }}
+        run: |
+          echo "$GCP_SA_KEY_B64" | base64 -d > "$RUNNER_TEMP/gcp_sa.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/gcp_sa.json"
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_APPLICATION_CREDENTIALS" >> "$GITHUB_ENV"
+          firebase projects:list 1>/dev/null
+
+      - name: Build frontend → frontend/out → dist
         run: |
           if [ -d frontend ]; then
             cd frontend
-            if [ -f package-lock.json ]; then
-              npm ci
-            else
-              npm install
-            fi
+            if [ -f package-lock.json ]; then npm ci; else npm install; fi
             npx next build
             npx next export -o out
             cd ..
@@ -46,26 +58,17 @@ jobs:
             mkdir -p dist
           fi
 
-      - name: Deploy Functions
+      - name: Deploy Functions (if present)
         if: ${{ hashFiles('functions/**') != '' }}
         run: |
           cd functions
-          if [ -f package-lock.json ]; then
-            npm ci
-          else
-            npm install
-          fi
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
           npm run build || npx tsc -p tsconfig.json || true
           cd ..
           firebase deploy --only functions --project "$FIREBASE_PROJECT_ID" --force --non-interactive
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ env.GOOGLE_APPLICATION_CREDENTIALS }}
-          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
 
-      - name: Deploy Hosting
+      - name: Deploy Hosting (skip if empty dist)
+        if: ${{ hashFiles('dist/**') != '' }}
         run: |
           firebase deploy --only hosting --project "$FIREBASE_PROJECT_ID" --force --non-interactive
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ env.GOOGLE_APPLICATION_CREDENTIALS }}
-          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
 
