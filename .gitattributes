@@ -1,0 +1,3 @@
+*.env           -diff linguist-vendored export-ignore
+.env.*          -diff linguist-vendored export-ignore
+env.production  -diff linguist-vendored export-ignore
