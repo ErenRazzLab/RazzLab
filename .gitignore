@@ -14,3 +14,6 @@ frontend/.env
 functions/.env
 *.zip
 razzlab-*.json
+node_modules/
+frontend/node_modules/
+functions/node_modules/
