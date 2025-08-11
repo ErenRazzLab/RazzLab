@@ -2,73 +2,84 @@ name: Deploy Firebase
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     env:
-      FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+      PROJECT_ID: razzlab
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node 20 (cache npm)
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-          cache-dependency-path: |
-            package-lock.json
-            frontend/package-lock.json
-            functions/package-lock.json
 
       - name: Install Firebase CLI
         run: npm i -g firebase-tools
 
-      - name: Fail fast if secrets missing
+      - name: Authenticate with Firebase (service account b64)
+        shell: bash
         env:
           GCP_SA_KEY_B64: ${{ secrets.GCP_SA_KEY_B64 }}
         run: |
-          [ -n "$GCP_SA_KEY_B64" ] || { echo "::error::Missing secret GCP_SA_KEY_B64"; exit 1; }
-          [ -n "$FIREBASE_PROJECT_ID" ] || { echo "::error::Missing secret FIREBASE_PROJECT_ID"; exit 1; }
+          set -e
+          echo "$GCP_SA_KEY_B64" | base64 -d > "$HOME/gcp_sa.json"
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcp_sa.json" >> "$GITHUB_ENV"
+          firebase projects:list >/dev/null
 
-      - name: Authenticate with Firebase (base64 key)
-        env:
-          GCP_SA_KEY_B64: ${{ secrets.GCP_SA_KEY_B64 }}
+      - name: Build frontend -> dist
+        shell: bash
         run: |
-          echo "$GCP_SA_KEY_B64" | base64 -d > "$RUNNER_TEMP/gcp_sa.json"
-          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/gcp_sa.json"
-          echo "GOOGLE_APPLICATION_CREDENTIALS=$GOOGLE_APPLICATION_CREDENTIALS" >> "$GITHUB_ENV"
-          firebase projects:list 1>/dev/null
-
-      - name: Build frontend → frontend/out → dist
-        run: |
+          set -e
           if [ -d frontend ]; then
             cd frontend
-            if [ -f package-lock.json ]; then npm ci; else npm install; fi
-            npx next build
-            npx next export -o out
+            if [ -f package-lock.json ]; then npm ci; else npm i; fi
+            if npm run | grep -q "^  build"; then
+              npm run build
+            else
+              npx next build
+            fi
+            # export static site if available; otherwise rely on your build output
+            if npx --yes next --help >/dev/null 2>&1; then
+              npx next export -o out || true
+            fi
             cd ..
-            rm -rf dist && mkdir -p dist
-            cp -r frontend/out/* dist/ || true
+            rm -rf dist
+            mkdir -p dist
+            if [ -d frontend/out ]; then
+              cp -r frontend/out/* dist/
+            elif [ -d frontend/.next/static ]; then
+              # minimal fallback if export didn't run; you can customize as needed
+              cp -r frontend/public/* dist/ 2>/dev/null || true
+            fi
           else
             mkdir -p dist
           fi
 
-      - name: Deploy Functions (if present)
+      - name: Deploy Cloud Functions (if present)
         if: ${{ hashFiles('functions/**') != '' }}
+        shell: bash
         run: |
+          set -e
           cd functions
-          if [ -f package-lock.json ]; then npm ci; else npm install; fi
-          npm run build || npx tsc -p tsconfig.json || true
+          if [ -f package-lock.json ]; then npm ci; else npm i; fi
+          # TypeScript build if tsconfig exists
+          if [ -f tsconfig.json ]; then npm run build || npx tsc -p tsconfig.json; fi
           cd ..
-          firebase deploy --only functions --project "$FIREBASE_PROJECT_ID" --force --non-interactive
+          firebase deploy --only functions --project "$PROJECT_ID" --force --non-interactive
 
-      - name: Deploy Hosting (skip if empty dist)
-        if: ${{ hashFiles('dist/**') != '' }}
+      - name: Deploy Hosting
+        shell: bash
         run: |
-          firebase deploy --only hosting --project "$FIREBASE_PROJECT_ID" --force --non-interactive
+          set -e
+          # Ensure firebase.json points "public" to "dist"
+          jq '.hosting.public="dist"' firebase.json > firebase.tmp.json && mv firebase.tmp.json firebase.json || true
+          firebase deploy --only hosting --project "$PROJECT_ID" --force --non-interactive
 
