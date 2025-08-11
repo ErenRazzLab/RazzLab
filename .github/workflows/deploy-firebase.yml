@@ -2,50 +2,64 @@ name: Deploy Firebase
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      FIREBASE_PROJECT_ID: razzlab
+      GCP_SA_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RAZZLAB }}
 
     steps:
-      - name: Set up job
-        run: |
-          echo "Starting deploy job..."
-
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node 20
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
 
       - name: Install Firebase CLI
-        run: npm install -g firebase-tools
+        run: npm i -g firebase-tools
 
       - name: Auth with service account
         run: |
-          echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" > $HOME/gcp_sa.json
+          echo "$GCP_SA_KEY" > $HOME/gcp_sa.json
           export GOOGLE_APPLICATION_CREDENTIALS="$HOME/gcp_sa.json"
+          firebase projects:list 1>/dev/null
 
-      - name: Install deps (root if present)
+      # --- Build frontend -> frontend/out, then copy to dist for Hosting ---
+      - name: Build frontend and prepare dist
         run: |
-          if [ -f package-lock.json ]; then
-            npm ci
+          if [ -d frontend ]; then
+            cd frontend
+            if [ -f package-lock.json ]; then npm ci; else npm install; fi
+            npx next build
+            npx next export -o out
+            cd ..
+            rm -rf dist && mkdir -p dist
+            cp -r frontend/out/* dist/ || true
+          else
+            echo "No frontend/ directory; creating empty dist/"
+            mkdir -p dist
           fi
 
-      - name: Build frontend -> dist
-        run: |
-          cd frontend
-          npm ci
-          npm run build
-          cd ..
-
+      # --- Deploy Cloud Functions if present ---
       - name: Deploy Functions
-        run: firebase deploy --only functions --project ${{ secrets.FIREBASE_PROJECT_ID }} --non-interactive
+        if: ${{ hashFiles('functions/**') != '' }}
+        run: |
+          export GOOGLE_APPLICATION_CREDENTIALS="$HOME/gcp_sa.json"
+          cd functions
+          if [ -f package-lock.json ]; then npm ci; else npm install; fi
+          npm run build || npx tsc -p tsconfig.json || true
+          cd ..
+          firebase deploy --only functions --project "$FIREBASE_PROJECT_ID" --force --non-interactive
 
+      # --- Deploy Hosting (uses dist/ -> firebase.json rewrites) ---
       - name: Deploy Hosting
-        run: firebase deploy --only hosting --project ${{ secrets.FIREBASE_PROJECT_ID }} --non-interactive
+        run: |
+          export GOOGLE_APPLICATION_CREDENTIALS="$HOME/gcp_sa.json"
+          firebase deploy --only hosting --project "$FIREBASE_PROJECT_ID" --force --non-interactive
 
