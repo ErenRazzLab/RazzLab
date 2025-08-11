@@ -1,23 +1,16 @@
-# deps
 node_modules/
 frontend/node_modules/
 functions/node_modules/
-
-# builds / artifacts
 dist/
 frontend/out/
 .next/
 functions/lib/
 firebase-debug.log
 .DS_Store
-
-# env / secrets
 .env
 .env.*
 env.production
 frontend/.env
 functions/.env
-
-# archives
 *.zip
-
+razzlab-3c70c40cfb23.json
