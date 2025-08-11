@@ -1,1 +1,0 @@
-export default function Home(){return(<main style={{padding:20,fontFamily:'system-ui'}}><h1>RazzLab (Next.js starter)</h1><p>Replace this page with your components. Build exports to <code>/public</code> for Firebase Hosting.</p></main>)}

@@ -1,0 +1,24 @@
+{
+  "name": "razzlab",
+  "version": "1.0.0",
+  "description": "<!-- Placeholder content for README.md -->",
+  "main": "agent.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErenRazzLab/RazzLab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErenRazzLab/RazzLab/issues"
+  },
+  "homepage": "https://github.com/ErenRazzLab/RazzLab#readme",
+  "type": "module"
+}
