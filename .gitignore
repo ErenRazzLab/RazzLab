@@ -28,3 +28,15 @@ functions/lib/
 .env.*
 frontend/.env
 functions/.env
+node_modules/
+frontend/node_modules/
+functions/node_modules/
+dist/
+frontend/out/
+.next/
+functions/lib/
+.env
+.env.*
+frontend/.env
+functions/.env
+firebase-debug.log
