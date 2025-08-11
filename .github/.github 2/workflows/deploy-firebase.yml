@@ -1,0 +1,82 @@
+name: Deploy Firebase
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_hosting:
+        description: "Deploy Hosting (true/false)"
+        required: true
+        default: "true"
+      deploy_functions:
+        description: "Deploy Functions (true/false)"
+        required: true
+        default: "true"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      # Stripe + Firebase secrets
+      NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY }}
+      STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+      STRIPE_WEBHOOK_SECRET: ${{ secrets.STRIPE_WEBHOOK_SECRET }}
+      FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      # Optional service account JSON (if you prefer SA auth instead of token)
+      FIREBASE_SERVICE_ACCOUNT_RAZZLAB: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RAZZLAB }}
+      # Project ID
+      FIREBASE_PROJECT_ID: razzlab
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Write .env.production for build (frontend)
+        run: |
+          cat > .env.production << 'EOF'
+          NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=${NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}
+          # Add other NEXT_PUBLIC_* as needed
+          EOF
+
+      - name: Install root deps (if present) and build
+        run: |
+          if [ -f package.json ]; then
+            npm ci
+            npm run build --if-present
+          fi
+
+      - name: Install Firebase CLI
+        run: npm i -g firebase-tools
+
+      - name: Auth and set project
+        run: |
+          if [ -n "${{ secrets.FIREBASE_SERVICE_ACCOUNT_RAZZLAB }}" ]; then
+            echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT_RAZZLAB }}" > $HOME/gcp_sa.json
+            firebase auth:login:ci --no-localhost || true
+            firebase use ${FIREBASE_PROJECT_ID}
+          else
+            firebase logout || true
+            export FIREBASE_TOKEN="${FIREBASE_TOKEN}"
+            firebase use ${FIREBASE_PROJECT_ID}
+          fi
+
+      - name: Deploy Functions
+        if: ${{ github.event.inputs.deploy_functions == 'true' }}
+        run: |
+          if [ -d functions ]; then
+            cd functions
+            npm ci
+            npm run build || npx tsc -p tsconfig.json || true
+            cd ..
+            firebase deploy --only functions --project ${FIREBASE_PROJECT_ID}
+          else
+            echo "No functions directory; skipping."
+          fi
+
+      - name: Deploy Hosting
+        if: ${{ github.event.inputs.deploy_hosting == 'true' }}
+        run: firebase deploy --only hosting --project ${FIREBASE_PROJECT_ID}
