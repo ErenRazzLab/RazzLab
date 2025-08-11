@@ -11,3 +11,6 @@ frontend/.env
 functions/.env
 firebase-debug.log
 .DS_Store
+env.production
+.env
+.env.*
