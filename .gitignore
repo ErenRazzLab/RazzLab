@@ -17,3 +17,14 @@ frontend/out/
 functions/lib/
 .env*
 firebase-debug.log
+node_modules/
+frontend/node_modules/
+functions/node_modules/
+dist/
+frontend/out/
+.next/
+functions/lib/
+.env
+.env.*
+frontend/.env
+functions/.env
