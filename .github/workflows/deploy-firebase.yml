@@ -20,53 +20,81 @@ jobs:
 
       - name: Require secrets
         run: |
-          [ -n "${{ secrets.GCP_SA_KEY_B64 }}" ] || { echo 
-'::error::Missing GCP_SA_KEY_B64'; exit 1; }
-          [ -n "${{ secrets.FIREBASE_PROJECT_ID }}" ] || { echo 
-'::error::Missing FIREBASE_PROJECT_ID'; exit 1; }
+          [ -n "${{ secrets.GCP_SA_KEY_B64 }}" ] || { echo '::error::Missing GCP_SA_KEY_B64'; exit 1; }
+          [ -n "${{ secrets.FIREBASE_PROJECT_ID }}" ] || { echo '::error::Missing FIREBASE_PROJECT_ID'; exit 1; }
 
       - name: Auth
         env:
           GCP_SA_KEY_B64: ${{ secrets.GCP_SA_KEY_B64 }}
         run: |
           echo "$GCP_SA_KEY_B64" | base64 -d > "$RUNNER_TEMP/sa.json"
-          echo "GOOGLE_APPLICATION_CREDENTIALS=$RUNNER_TEMP/sa.json" >> 
-$GITHUB_ENV
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$RUNNER_TEMP/sa.json" >> $GITHUB_ENV
           firebase projects:list 1>/dev/null
 
-      - name: Build frontend → out (ci fallback to install)
+      - name: Frontend deps + build (logs, fallback to install)
+        id: fe
+        continue-on-error: true
         run: |
+          set -o pipefail
           if [ -d frontend ]; then
             cd frontend
-            if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; 
-then
-              npm ci
+            if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
+              npm ci 2>&1 | tee "$RUNNER_TEMP/frontend_npm_install.log"
             else
-              npm install
+              npm install 2>&1 | tee "$RUNNER_TEMP/frontend_npm_install.log"
             fi
-            npm run build || npx next build || true
-            npx next export -o out || true
+            (npm run build || npx next build) 2>&1 | tee "$RUNNER_TEMP/frontend_build.log"
+            npx next export -o out 2>&1 | tee "$RUNNER_TEMP/frontend_export.log" || true
+          else
+            echo "No frontend/ directory. Skipping build."
           fi
 
-      - name: Build functions (ci fallback to install)
+      - name: Functions deps + build (logs, fallback to install)
+        id: fn
+        continue-on-error: true
         run: |
+          set -o pipefail
           if [ -d functions ]; then
             cd functions
-            if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; 
-then
-              npm ci
+            if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
+              npm ci 2>&1 | tee "$RUNNER_TEMP/functions_npm_install.log"
             else
-              npm install
+              npm install 2>&1 | tee "$RUNNER_TEMP/functions_npm_install.log"
             fi
-            npm run build || npx tsc -p tsconfig.json || true
+            (npm run build || npx tsc -p tsconfig.json) 2>&1 | tee "$RUNNER_TEMP/functions_build.log" || true
+          else
+            echo "No functions/ directory. Skipping build."
           fi
 
-      - name: Deploy Functions
-        if: ${{ hashFiles('functions/**') != '' }}
-        run: firebase deploy --only functions --project 
-$FIREBASE_PROJECT_ID --force --non-interactive
+      - name: Upload debug logs and build artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-artifacts
+          path: |
+            ${{ runner.temp }}/*_npm_install.log
+            ${{ runner.temp }}/*_build.log
+            ${{ runner.temp }}/*_export.log
+            ~/.npm/_logs/*-debug-*.log
+            frontend/out/**
+            functions/lib/**
+          if-no-files-found: ignore
 
-      - name: Deploy Hosting
-        run: firebase deploy --only hosting --project $FIREBASE_PROJECT_ID 
---force --non-interactive
+      - name: Deploy Functions
+        if: always()
+        run: |
+          if [ -d functions ]; then
+            firebase deploy --only functions --project "$FIREBASE_PROJECT_ID" --force --non-interactive
+          else
+            echo "No functions/ directory. Skipping functions deploy."
+          fi
+
+      - name: Deploy Hosting (skip if no build output)
+        if: always()
+        run: |
+          if [ -d frontend/out ] && compgen -G "frontend/out/*" > /dev/null; then
+            firebase deploy --only hosting --project "$FIREBASE_PROJECT_ID" --force --non-interactive
+          else
+            echo "No frontend/out to deploy. Skipping hosting deploy."
+          fi
 
