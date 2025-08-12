@@ -1,12 +1,7 @@
-# Environment files
 *.env           -diff linguist-vendored export-ignore
 .env.*          -diff linguist-vendored export-ignore
 env.production  -diff linguist-vendored export-ignore
-
-# Firebase/GCP keys
 razzlab-*.json  -diff linguist-vendored export-ignore
 *.serviceaccount.json -diff linguist-vendored export-ignore
-
-# Build artifacts
 dist/**         -diff linguist-vendored export-ignore
 frontend/out/** -diff linguist-vendored export-ignore

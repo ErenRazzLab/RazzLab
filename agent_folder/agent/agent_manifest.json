@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "steps": [
+    { "id": "01-preflight",   "description": "Validate tokens and project id" },
+    { "id": "02-branch",      "description": "Create working branch" },
+    { "id": "03-upsert-files","description": "Write CI and configs" },
+    { "id": "04-open-pr",     "description": "Open pull request" },
+    { "id": "05-secrets",     "description": "Ensure repo secrets" },
+    { "id": "06-run-workflow","description": "Dispatch and merge" },
+    { "id": "07-verify",      "description": "Verify hosting, functions, webhook" },
+    { "id": "08-report",      "description": "Write CI summary" }
+  ],
+  "state_file": "reports/agent_state.json"
+}
