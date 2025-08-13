@@ -1,20 +1,173 @@
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-    Seller Agreement
-    Seller terms for RazzLab.
-    =======
+<!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   RazzLab - Home
-  </title>
-  <link href="styles/main.css" rel="stylesheet"/>
- </head>
- <body>
-  <h1>
-   Welcome to RazzLab
-  </h1>
- </body>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fair Razzes. Real Collectibles. RazzLab lets you create and join collectible card raffles.">
+  <meta property="og:title" content="RazzLab – Fair Razzes. Real Collectibles.">
+  <meta property="og:description" content="Create and join collectible card raffles with RazzLab.">
+  <meta property="og:image" content="/assets/icon.png">
+  <meta property="og:url" content="https://razzlab.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RazzLab - Home</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <h1>Welcome to RazzLab</h1>
+  <button id="loginBtn">Login with Google</button>
+  <script type="module" src="scripts/firebase-config.js"></script>
+  <script type="module" src="scripts/auth.js"></script>
+</body>
 </html>
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch
+=======
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="RazzLab — Fair Razzes. Real Collectibles." name="description"/>
+<link href="/favicon.ico" rel="icon"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="RazzLab — Fair Razzes. Real Collectibles." name="description"/>
+<link href="/favicon.ico" rel="icon"/>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RazzLab · Live Card Razzes</title>
+<!-- Tailwind CSS via CDN for quick styling -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Firebase compat SDKs -->
+<!-- Icons -->
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-VWFRMeLhHBVRX6TI2+xXHc4EFw/4JmEFHEUViX0u/Tcy6sdQEcRKxLto9rLkm/rdXS8LKQCtEItUWr2GvCBHOWw==" referrerpolicy="no-referrer" rel="stylesheet"/>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-50 text-gray-800">
+<h1 class="text-4xl font-bold">Fair Razzes. Real Collectibles.</h1>
+<p class="mt-2 text-lg text-gray-600">Create or join card razzes in seconds.</p>
+
+<!-- Navigation bar -->
+<nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+<a class="flex items-center space-x-2" href="index.html">
+<span class="text-purple-600 text-2xl font-extrabold">RazzLab</span>
+</a>
+<div class="flex items-center space-x-4" id="nav-links">
+<!-- Provide default navigation links in case JS fails. These links will be replaced
+               by auth.js based on the user's authentication state. -->
+<a class="text-gray-700 hover:underline" href="listings.html">Razzes</a>
+<a class="text-gray-700 hover:underline" href="login.html">Login</a>
+<a class="text-gray-700 hover:underline" href="register.html">Register</a>
+</div>
+</div>
+</nav>
+<!-- Hero section -->
+<header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16 md:py-24">
+<div class="max-w-5xl mx-auto text-center px-4">
+
+<p class="text-lg md:text-2xl mb-6">Razz your way into high‑end card collections and win big!</p>
+<a class="inline-block bg-white text-purple-700 px-6 py-3 rounded-full font-semibold shadow hover:bg-purple-50 transition" href="listings.html">Enter Live Razzes</a>
+</div>
+</header>
+<!-- Home login section -->
+<section class="py-12 bg-gray-50" id="home-login-section">
+<div class="max-w-md mx-auto bg-white rounded-lg shadow p-6">
+<h2 class="text-2xl font-bold mb-4">Log In</h2>
+<form class="space-y-4" id="home-login-form">
+<div>
+<label class="block text-sm font-medium mb-1" for="home-email">Email</label>
+<input class="w-full px-3 py-2 border rounded" id="home-email" required="" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium mb-1" for="home-password">Password</label>
+<input class="w-full px-3 py-2 border rounded" id="home-password" required="" type="password"/>
+</div>
+<div class="hidden text-red-600 text-sm" id="home-login-error"></div>
+<button class="w-full bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition" type="submit">Login</button>
+</form>
+<button class="mt-4 w-full bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition" id="home-google-login">Continue with Google</button>
+<button class="mt-2 w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition" id="home-facebook-login">Continue with Facebook</button>
+<p class="mt-4 text-center text-sm">Don't have an account? <a class="text-purple-600 hover:underline" href="register.html">Register</a></p>
+</div>
+</section>
+<!-- Current razzes preview -->
+<section class="py-12">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-2xl font-bold mb-4">🔥 Live Razzes</h2>
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4" id="live-razzes">
+<!-- Filled dynamically via JS -->
+</div>
+<div class="mt-6 text-center">
+<a class="text-purple-600 hover:underline" href="listings.html">View all razzes →</a>
+</div>
+</div>
+</section>
+<!-- Highlights section -->
+<section class="bg-white py-12">
+<div class="max-w-7xl mx-auto px-4 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<div class="p-6 rounded-lg shadow hover:shadow-md transition bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
+<h3 class="text-xl font-bold mb-2">Mini &amp; Micro Razzes</h3>
+<p>Enter low‑cost minis to win entry into high‑end razzes. More chances, more fun!</p>
+</div>
+<div class="p-6 rounded-lg shadow hover:shadow-md transition bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+<h3 class="text-xl font-bold mb-2">Cryptographically Fair Draws</h3>
+<p>We use browser crypto APIs to ensure truly random and verifiable outcomes.</p>
+</div>
+<div class="p-6 rounded-lg shadow hover:shadow-md transition bg-gradient-to-r from-pink-500 to-red-500 text-white">
+<h3 class="text-xl font-bold mb-2">Showcase Your Collection</h3>
+<p>Build your personal collection, tag cards as PC, FS or NFT and show off to the community.</p>
+</div>
+</div>
+</section>
+<!-- Recent winners -->
+<section class="py-12 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-2xl font-bold mb-4">🎉 Recent Winners</h2>
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4" id="recent-winners">
+<!-- Filled dynamically via JS -->
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-white border-t mt-auto">
+<div class="max-w-7xl mx-auto px-4 py-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+<div>
+<h3 class="font-semibold mb-2">RazzLab</h3>
+<p>Your home for high‑energy card razzes. Built by collectors, for collectors.</p>
+</div>
+<div>
+<h3 class="font-semibold mb-2">Legal</h3>
+<ul class="space-y-1">
+<li><a class="hover:underline" href="terms.html">Terms of Service</a></li>
+<li><a class="hover:underline" href="privacy.html">Privacy Policy</a></li>
+<li><a class="hover:underline" href="fee-policy.html">Fee Policy</a></li>
+<li><a class="hover:underline" href="seller-agreement.html">Seller Agreement</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-semibold mb-2">Community</h3>
+<p>Join our Discord to chat with other razzers and stay up to date!</p>
+</div>
+</div>
+<div class="text-center py-4 text-xs text-gray-500">© <span id="year"></span> RazzLab. All rights reserved.</div>
+</footer>
+<!-- App scripts -->
+<script src="scripts/index.js" type="module"></script>
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"></script>
+<script src="/scripts/firebase-init.js"></script>
+<script src="/scripts/dynamic-nav.js" type="module"></script></body>
+</html>
+>>>>>>> d885342 (Initial Firebase launch version)
