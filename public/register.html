@@ -1,128 +1,16 @@
-<!DOCTYPE html>
-<<<<<<< HEAD
-<html>
-<head>
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fair Razzes. Real Collectibles. RazzLab lets you create and join collectible card raffles.">
-  <meta property="og:title" content="RazzLab – Fair Razzes. Real Collectibles.">
-  <meta property="og:description" content="Create and join collectible card raffles with RazzLab.">
-  <meta property="og:image" content="/assets/icon.png">
-  <meta property="og:url" content="https://razzlab.com">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="/favicon.ico">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
-  <title>Register - RazzLab</title>
-  <link rel='stylesheet' href='style.css'>
-</head>
-<body>
-  <h2>Register</h2>
-  <form>
-    <input type='text' placeholder='Name'><br>
-    <input type='email' placeholder='Email'><br>
-    <input type='password' placeholder='Password'><br>
-    <button type='submit'>Register</button>
-  </form>
-</body>
-=======
-
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+    Register Page
+    =======
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="RazzLab — Fair Razzes. Real Collectibles." name="description"/>
-<link href="/favicon.ico" rel="icon"/>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="RazzLab — Fair Razzes. Real Collectibles." name="description"/>
-<link href="/favicon.ico" rel="icon"/>
-<meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Register · RazzLab</title>
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="min-h-screen bg-gray-50 flex flex-col">
-<nav class="bg-white shadow-md sticky top-0 z-50">
-<div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-<a class="flex items-center space-x-2" href="index.html">
-<span class="text-purple-600 text-2xl font-extrabold">RazzLab</span>
-</a>
-<div>
-<a class="text-purple-600 hover:underline" href="login.html">Login</a>
-</div>
-</div>
-</nav>
-<main class="flex-1 flex items-center justify-center p-4">
-<div class="bg-white rounded-lg shadow p-6 w-full max-w-md">
-<h1 class="text-2xl font-bold mb-4 text-center">Create your account</h1>
-<form class="space-y-4" id="register-form">
-<div>
-<label class="block text-sm font-medium" for="name">Display Name</label>
-<input class="mt-1 w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-500" id="name" required="" type="text"/>
-</div>
-<div>
-<label class="block text-sm font-medium" for="email">Email</label>
-<input class="mt-1 w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-500" id="email" required="" type="email"/>
-</div>
-<div>
-<label class="block text-sm font-medium" for="password">Password</label>
-<input class="mt-1 w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-500" id="password" minlength="6" required="" type="password"/>
-</div>
-<div>
-<label class="block text-sm font-medium" for="confirm-password">Confirm Password</label>
-<input class="mt-1 w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-500" id="confirm-password" minlength="6" required="" type="password"/>
-</div>
-<button class="w-full bg-purple-600 text-white py-2 rounded hover:bg-purple-700 transition" type="submit">Register</button>
-</form>
-<p class="text-red-500 text-sm mt-4 hidden" id="register-error"></p>
-</div>
-</main>
-<script type="module">
-      import { registerWithEmailPassword, onAuthStateChangedCustom } from './scripts/auth.js';
-      const form = document.getElementById('register-form');
-      const errorEl = document.getElementById('register-error');
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        errorEl.classList.add('hidden');
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        const confirmPassword = document.getElementById('confirm-password').value;
-        if (password !== confirmPassword) {
-          errorEl.textContent = 'Passwords do not match.';
-          errorEl.classList.remove('hidden');
-          return;
-        }
-        try {
-          await registerWithEmailPassword(name, email, password);
-          window.location.href = 'index.html';
-        } catch (err) {
-          console.error(err);
-          errorEl.textContent = err.message;
-          errorEl.classList.remove('hidden');
-        }
-      });
-      // redirect if logged in
-      onAuthStateChangedCustom((user) => {
-        if (user) {
-          window.location.href = 'index.html';
-        }
-      });
-    </script>
-<!-- Firebase SDKs -->
-<!-- Your Firebase config -->
-<!-- Firebase SDKs -->
-<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"></script>
-<script src="/scripts/firebase-init.js"></script>
-<script src="/scripts/auth.js" type="module"></script></body>
->>>>>>> d885342 (Initial Firebase launch version)
+ <head>
+  <title>
+   Register
+  </title>
+ </head>
+ <body>
+  <h2>
+   Create your account
+  </h2>
+ </body>
 </html>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch
